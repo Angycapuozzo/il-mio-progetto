@@ -29,11 +29,11 @@ images.forEach((image) => {
 
 const button = document.createElement("button");
 document.body.appendChild(button);
-button.innerHTML = '<i class=" fas fa-chevron-up"></i> '
+button.innerHTML= '<i class="fas fa-chevron-up"> </i>';
 button.style.position = "fixed"
 button.style.bottom = "20px"
 button.style.right = "20px"
-button.style.display = "none";
+button.style.display = "none"
 
 button.addEventListener("click", () => {
     window.scrollTo({
@@ -41,11 +41,12 @@ button.addEventListener("click", () => {
         behavior: "smooth"
     })
 })
-window.addEventListener("scrool", () => {
-    if (window.scrollY >500) {
-        button.style.display= "block"
+
+window.addEventListener("scroll", ()=> {
+    if (window.scrollY>500) {
+        button.style.display ="block"
     } else {
-        button.style.display="none"
+        button.style.display= "none"
     }
 
-});
+})
