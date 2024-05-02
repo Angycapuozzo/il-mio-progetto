@@ -19,21 +19,18 @@ body::-webkit-scrollbar {
     z-index: 1;
     display: flex;
     align-items: center ;
-    position: relative;
-    overflow: hidden;
 }
 
 #navlinks{
     display: flex;
+    margin: auto;
 }
 
 #search-icon{
     height: 20px;
-    margin-left: auto;
-    display: flex;
-    position: absolute;
-    right: 5px;
-    float: left;
+    margin: auto;
+    margin-right: 5px;
+   
 }
 
 li{
